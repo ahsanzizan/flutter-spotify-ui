@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/views/home.dart';
+import 'package:spotify_clone/views/profile.dart';
 
 class Tabbar extends StatefulWidget {
   const Tabbar({super.key});
@@ -36,7 +37,7 @@ class _TabbarState extends State<Tabbar> {
           render(0, const HomeView()),
           render(1, SearchView()),
           render(2, LibraryView()),
-          render(3, ProfileView())
+          render(3, const ProfileView())
         ],
       ),
     );
