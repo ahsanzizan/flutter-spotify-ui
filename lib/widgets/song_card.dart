@@ -30,8 +30,11 @@ class SongCard extends StatelessWidget {
               width: 140,
               height: 140,
             ),
+            const SizedBox(
+              height: 12,
+            ),
             Text(
-              "Bad Bunny, Drake, Justin Bieber, Taylor Swift, Ed Sheeran",
+              "My Chemical Romance, The Panturas, The Jansen, Pamungkas, Dewa 19, Kana-boon",
               style: Theme.of(context).textTheme.caption,
               overflow: TextOverflow.ellipsis,
               maxLines: 2,

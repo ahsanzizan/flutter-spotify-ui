@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:spotify_clone/views/home.dart';
+import 'package:spotify_clone/views/library.dart';
 import 'package:spotify_clone/views/profile.dart';
 import 'package:spotify_clone/views/search.dart';
 
@@ -37,7 +38,7 @@ class _TabbarState extends State<Tabbar> {
         children: [
           render(0, const HomeView()),
           render(1, const SearchView()),
-          render(2, LibraryView()),
+          render(2, const LibraryView()),
           render(3, const ProfileView()),
         ],
       ),

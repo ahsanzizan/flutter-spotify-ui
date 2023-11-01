@@ -21,7 +21,7 @@ class _HomeViewState extends State<HomeView> {
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height * .6,
             decoration: const BoxDecoration(
-              color: Color(0xFf1C7A74),
+              color: Color.fromARGB(255, 255, 0, 0),
             ),
           ),
           SingleChildScrollView(
@@ -52,7 +52,7 @@ class _HomeViewState extends State<HomeView> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
-                            "Recently Played",
+                            "Recent",
                             style: Theme.of(context).textTheme.headline6,
                           ),
                           Row(
@@ -60,6 +60,8 @@ class _HomeViewState extends State<HomeView> {
                               Icon(Icons.history),
                               SizedBox(width: 16),
                               Icon(Icons.settings),
+                              SizedBox(width: 16),
+                              Icon(Icons.camera_alt),
                             ],
                           )
                         ],
@@ -68,31 +70,31 @@ class _HomeViewState extends State<HomeView> {
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       physics: const BouncingScrollPhysics(),
-                      padding: const EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(18),
                       child: Row(
                         children: const [
                           AlbumCard(
-                            label: "Best Mode",
-                            image: AssetImage("assets/album7.jpg"),
+                            label: "Beast Mode",
+                            image: AssetImage("assets/album5.jpg"),
                           ),
                           SizedBox(width: 16),
                           AlbumCard(
-                            label: "Mot6ivation Mix",
-                            image: AssetImage("assets/album2.jpg"),
+                            label: "Beast Mode",
+                            image: AssetImage("assets/album4.jpg"),
                           ),
                           SizedBox(width: 16),
                           AlbumCard(
-                            label: "Top 50-Global",
+                            label: "Top 50",
                             image: AssetImage("assets/top50.jpg"),
                           ),
                           SizedBox(width: 16),
                           AlbumCard(
-                            label: "Power Gaming",
+                            label: "Gaming",
                             image: AssetImage("assets/album1.jpg"),
                           ),
                           SizedBox(width: 16),
                           AlbumCard(
-                            label: "Top songs - Global",
+                            label: "Top songs",
                             image: AssetImage("assets/album9.jpg"),
                           ),
                         ],
@@ -105,20 +107,20 @@ class _HomeViewState extends State<HomeView> {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Text(
-                            "Good evening",
-                            style: Theme.of(context).textTheme.headline6,
+                            "Good Evening, Ahsan",
+                            style: Theme.of(context).textTheme.headline5,
                           ),
                           const SizedBox(height: 16),
                           Row(
                             children: const [
                               RowAlbumCard(
-                                label: "Top 50 - Global",
-                                image: AssetImage("assets/top50.jpg"),
+                                label: "Best Mode",
+                                image: AssetImage("assets/album1.jpg"),
                               ),
                               SizedBox(width: 16),
                               RowAlbumCard(
-                                label: "Best Mode",
-                                image: AssetImage("assets/album1.jpg"),
+                                label: "Top 50",
+                                image: AssetImage("assets/top50.jpg"),
                               ),
                             ],
                           ),
@@ -126,12 +128,12 @@ class _HomeViewState extends State<HomeView> {
                           Row(
                             children: const [
                               RowAlbumCard(
-                                label: "RapCaviar",
+                                label: "Rap",
                                 image: AssetImage("assets/album2.jpg"),
                               ),
                               SizedBox(width: 16),
                               RowAlbumCard(
-                                label: "Eminem",
+                                label: "Eminem Musics",
                                 image: AssetImage("assets/album5.jpg"),
                               ),
                             ],
@@ -140,12 +142,12 @@ class _HomeViewState extends State<HomeView> {
                           Row(
                             children: const [
                               RowAlbumCard(
-                                label: "Top 50 - USA",
+                                label: "Top 50 - Indonesia",
                                 image: AssetImage("assets/album9.jpg"),
                               ),
                               SizedBox(width: 16),
                               RowAlbumCard(
-                                label: "Pop Remix",
+                                label: "Rock Mix",
                                 image: AssetImage("assets/album10.jpg"),
                               ),
                             ],
@@ -206,7 +208,7 @@ class _HomeViewState extends State<HomeView> {
                         Padding(
                           padding: const EdgeInsets.all(16.0),
                           child: Text(
-                            "Recommended radio",
+                            "Recommended",
                             style: Theme.of(context).textTheme.headline6,
                           ),
                         ),
@@ -246,7 +248,7 @@ class _HomeViewState extends State<HomeView> {
                         )
                       ],
                     ),
-                    SizedBox(height: 16),
+                    const SizedBox(height: 16),
                   ],
                 ),
               ),

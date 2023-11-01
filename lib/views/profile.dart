@@ -12,7 +12,7 @@ class _ProfileViewState extends State<ProfileView> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text("Profile Works"),
+        child: Text("Ini Profile"),
       ),
     );
   }
