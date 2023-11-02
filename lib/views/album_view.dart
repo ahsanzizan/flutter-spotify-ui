@@ -45,7 +45,8 @@ class _AlbumViewState extends State<AlbumView> {
 
   @override
   Widget build(BuildContext context) {
-    final cardSize = MediaQuery.of(context).size.width / 2 - 32;
+    final cardWidth = MediaQuery.of(context).size.width / 2 - 32;
+
     return Scaffold(
       body: Stack(
         children: [
@@ -63,7 +64,8 @@ class _AlbumViewState extends State<AlbumView> {
                     decoration: BoxDecoration(
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(.5),
+                          color: const Color.fromARGB(255, 54, 54, 54)
+                              .withOpacity(.5),
                           offset: const Offset(0, 20),
                           blurRadius: 32,
                           spreadRadius: 16,
@@ -114,24 +116,24 @@ class _AlbumViewState extends State<AlbumView> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum",
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed magna bibendum, accumsan nibh non, posuere sapien.",
                                   style: Theme.of(context).textTheme.caption,
                                 ),
                                 const SizedBox(height: 8),
                                 Row(
                                   children: const [
                                     Image(
-                                      image: AssetImage('assets/logo.png'),
+                                      image: AssetImage('assets/album1.jpg'),
                                       width: 32,
                                       height: 32,
                                     ),
                                     SizedBox(width: 8),
-                                    Text("Spotify")
+                                    Text("Lil Nusnus")
                                   ],
                                 ),
                                 const SizedBox(height: 8),
                                 Text(
-                                  "1,888,132 likes 5h 3m",
+                                  "69,696 likes  6h 9m",
                                   style: Theme.of(context).textTheme.caption,
                                 ),
                                 const SizedBox(height: 16),
@@ -161,7 +163,7 @@ class _AlbumViewState extends State<AlbumView> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"),
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed magna bibendum, accumsan nibh non, posuere sapien."),
                         const SizedBox(height: 32),
                         Text(
                           "You might also like",
@@ -173,13 +175,13 @@ class _AlbumViewState extends State<AlbumView> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               AlbumCard(
-                                size: cardSize,
-                                label: "Get Turnt",
-                                image: const AssetImage("assets/album3.jpg"),
+                                size: cardWidth,
+                                label: "Lorem",
+                                image: const AssetImage("assets/album7.jpg"),
                               ),
                               AlbumCard(
-                                size: cardSize,
-                                label: "Get Turnt",
+                                size: cardWidth,
+                                label: "Lorem",
                                 image: const AssetImage("assets/album5.jpg"),
                               ),
                             ],
@@ -191,13 +193,13 @@ class _AlbumViewState extends State<AlbumView> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               AlbumCard(
-                                size: cardSize,
-                                label: "Get Turnt",
+                                size: cardWidth,
+                                label: "Lorem",
                                 image: const AssetImage("assets/album6.jpg"),
                               ),
                               AlbumCard(
-                                size: cardSize,
-                                label: "Get Turnt",
+                                size: cardWidth,
+                                label: "Lorem",
                                 image: const AssetImage("assets/album9.jpg"),
                               ),
                             ],
@@ -209,13 +211,13 @@ class _AlbumViewState extends State<AlbumView> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               AlbumCard(
-                                size: cardSize,
-                                label: "Get Turnt",
+                                size: cardWidth,
+                                label: "Lorem",
                                 image: AssetImage("assets/album10.jpg"),
                               ),
                               AlbumCard(
-                                size: cardSize,
-                                label: "Get Turnt",
+                                size: cardWidth,
+                                label: "Lorem",
                                 image: const AssetImage("assets/album4.jpg"),
                               ),
                             ],
