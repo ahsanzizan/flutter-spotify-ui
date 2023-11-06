@@ -81,7 +81,8 @@ class _SearchViewState extends State<SearchView> {
                   ),
                 ),
               ),
-            )
+            ),
+            const Padding(padding: EdgeInsets.symmetric(horizontal: 16))
           ],
         ),
       ]),

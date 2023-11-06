@@ -232,82 +232,80 @@ class _AlbumViewState extends State<AlbumView> {
           ),
           // App bar
           Positioned(
-              child: Container(
-            child: AnimatedContainer(
-              duration: const Duration(milliseconds: 250),
-              color: showTopBar
-                  ? const Color(0xFFC61855).withOpacity(1)
-                  : const Color(0xFFC61855).withOpacity(0),
-              padding: const EdgeInsets.symmetric(
-                horizontal: 16,
-                vertical: 8,
-              ),
-              child: SafeArea(
-                child: SizedBox(
-                  height: 40,
-                  width: MediaQuery.of(context).size.width,
-                  child: Stack(
-                    clipBehavior: Clip.none,
-                    alignment: Alignment.center,
-                    children: [
-                      Positioned(
-                        left: 0,
-                        child: GestureDetector(
-                          onTap: () {
-                            Navigator.pop(context);
-                          },
-                          child: const Icon(
-                            Icons.keyboard_arrow_left,
-                            size: 38,
-                          ),
+              child: AnimatedContainer(
+            duration: const Duration(milliseconds: 250),
+            color: showTopBar
+                ? const Color(0xFFC61855).withOpacity(1)
+                : const Color(0xFFC61855).withOpacity(0),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 16,
+              vertical: 8,
+            ),
+            child: SafeArea(
+              child: SizedBox(
+                height: 40,
+                width: MediaQuery.of(context).size.width,
+                child: Stack(
+                  clipBehavior: Clip.none,
+                  alignment: Alignment.center,
+                  children: [
+                    Positioned(
+                      left: 0,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        child: const Icon(
+                          Icons.keyboard_arrow_left,
+                          size: 38,
                         ),
                       ),
-                      AnimatedOpacity(
-                        duration: const Duration(milliseconds: 250),
-                        opacity: showTopBar ? 1 : 0,
-                        child: Text(
-                          "Ophelia",
-                          style: Theme.of(context).textTheme.headline6,
-                        ),
+                    ),
+                    AnimatedOpacity(
+                      duration: const Duration(milliseconds: 250),
+                      opacity: showTopBar ? 1 : 0,
+                      child: Text(
+                        "Ophelia",
+                        style: Theme.of(context).textTheme.headline6,
                       ),
-                      Positioned(
-                        right: 0,
-                        bottom:
-                            80 - containerHeight.clamp(120.0, double.infinity),
-                        child: Stack(
-                          alignment: Alignment.bottomRight,
-                          children: [
-                            Container(
-                              width: 64,
-                              height: 64,
-                              alignment: Alignment.center,
-                              decoration: const BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Color(0xff14D860),
-                              ),
-                              child: const Icon(
-                                Icons.play_arrow,
-                                size: 38,
-                              ),
+                    ),
+                    Positioned(
+                      right: 0,
+                      bottom:
+                          80 - containerHeight.clamp(120.0, double.infinity),
+                      child: Stack(
+                        alignment: Alignment.bottomRight,
+                        children: [
+                          Container(
+                            width: 64,
+                            height: 64,
+                            alignment: Alignment.center,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color(0xff14D860),
                             ),
-                            Container(
-                              width: 24,
-                              height: 24,
-                              decoration: const BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: Colors.white,
-                              ),
-                              child: const Icon(
-                                Icons.shuffle,
-                                color: Colors.black,
-                                size: 14,
-                              ),
-                            )
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
+                            child: const Icon(
+                              Icons.play_arrow,
+                              size: 38,
+                            ),
+                          ),
+                          Container(
+                            width: 24,
+                            height: 24,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Colors.white,
+                            ),
+                            child: const Icon(
+                              Icons.shuffle,
+                              color: Colors.black,
+                              size: 14,
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
                 ),
               ),
             ),
