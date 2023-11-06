@@ -15,7 +15,7 @@ class _SearchViewState extends State<SearchView> {
         Column(
           children: [
             const SizedBox(
-              height: 40,
+              height: 80,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
@@ -68,7 +68,8 @@ class _SearchViewState extends State<SearchView> {
                 decoration: InputDecoration(
                   hintText: 'Search for songs, artists, or podcasts',
                   hintStyle: const TextStyle(
-                      color: Colors.black, fontWeight: FontWeight.bold),
+                      color: Color.fromARGB(255, 89, 89, 89),
+                      fontWeight: FontWeight.bold),
                   prefixIcon: const Icon(
                     Icons.search,
                     color: Colors.black,
